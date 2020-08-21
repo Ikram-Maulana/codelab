@@ -1,0 +1,50 @@
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+
+CREATE TABLE `students` (
+    `id` int(11) NOT_NULL AUTO_INCREMENT,
+    `nim` varchar(255) NOT_NULL,
+    `nama` varchar(255) NOT_NULL,
+    PRIMARY KEY(`id`) 
+    );
+JUMLAH ITU KALAU SUDAH MASUK LINGKUP ENGINEERING BERPENGARUH DAN DISESUAIKAN GA ASAL
+
+[[[[
+'student'.'name'
+lalu ada 
+'subject'.'name'
+nah itu untuk supaya memastikan name itu untuk siapa
+`subjects`.`name` as subject
+nanti di php nya yang dipanggil itu subject untuk nama mata kuliah
+kalau nama mahasiswa  masih name
+jadi intinya supaya jelas aja, itu field punya siapa
+]]]]
+
+[[[[[
+  insert juga biasanya ada dua penulisan
+  yang pertama itu kaya gini
+  INSERT INTO table_name (column1, column2, column3, ...)
+  VALUES (value1, value2, value3, ...);
+  ada nama fieldnya sama value nya
+  
+  yang kedua secara langsung
+  INSERT INTO table_name
+  VALUES (value1, value2, value3, ...);
+  langsung ke value nya
+  INSERT INTO `students` VALUES (null, 'nim nya', 'nama nya');
+  adi supaya aman, biasanya diisi null untuk id
+
+  ini penulisan insert pakai cara kedua ya
+  biasanya kita mesti tau urutan fieldnya
+  misalkan kita coba kaya gini INSERT INTO `students` VALUES (null, 'gun gun', '14305xxxxx');
+  INSERT INTO `students` VALUES (null, 'gun gun', '14305xxxxx');
+  supaya ga salah field bagusnya kita pakai cara yang pertama
+  |
+  |
+  ^
+  INSERT INTO `students` (id, nim, name) VALUES (NULL, '14305XXXX', 'gun gun');
+]]]]]

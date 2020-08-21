@@ -1,0 +1,35 @@
+==========================
+[14:47, 8/5/2020] A Gungun: nah ini ada beberapa cara buat koneksi sama interaksi ke database
+[14:47, 8/5/2020] A Gungun: ada tiga cara
+[14:47, 8/5/2020] A Gungun: yang pertama itu secara object-oriented
+[14:48, 8/5/2020] A Gungun: yang kedua secara prosedural
+[14:48, 8/5/2020] A Gungun: yang ketiga pakai PDO
+============================
+
+untuk pengenalan biasanya pakai cara biasa yang prosedural
+
+kalau yang lebih secure itu pake PDO
+
+============================
+          PENTING
+============================
+[15:28, 8/5/2020] A Gungun: nah itu codenya dipisah antara query sql sama tampilannya
+[15:28, 8/5/2020] A Gungun: nanti masih bisa dirapiin lagi
+[15:29, 8/5/2020] Drajat TI: Siap kang,soalnya saya biasa disatuin
+[15:30, 8/5/2020] A Gungun: sebetulnya disatuin juga bisa..
+[15:30, 8/5/2020] A Gungun: cuman kalau kesini2 biasanya pengen dipisah2 😁
+[15:31, 8/5/2020] A Gungun: misalkan untuk menampilkan data
+[15:31, 8/5/2020] A Gungun: kalau sekarang ada file index.php
+[15:31, 8/5/2020] A Gungun: biasanya di satu file itu ada db config, ada koneksi ke database, ada query, ada code untuk UI
+[15:31, 8/5/2020] A Gungun: nah nanti bisa dipisah
+[15:32, 8/5/2020] A Gungun: buat db config kita pisah jadi db_config.php
+[15:32, 8/5/2020] A Gungun: untuk koneksi itu opsional bisa dipisah bisa disatuin sama db_config nya
+[15:32, 8/5/2020] A Gungun: untuk query nanti kita buat file khusus menampung query CRUD
+[15:33, 8/5/2020] A Gungun: nanti index.php itu isinya khusus menampilkan data aja
+[15:35, 8/5/2020] A Gungun: misalkan dipisah.. nanti kalau ada error, errornya itu diarahin ke filenya langsung
+[15:35, 8/5/2020] A Gungun: nanti fixnya tinggal buka filenya terus cek line sesuai petunjuk errornya
+
+[15:37, 8/5/2020] A Gungun: biasanya tahap awal itu asal jalan
+[15:37, 8/5/2020] A Gungun: tahap selanjutnya itu biasanya mulai dirapiin
+[15:37, 8/5/2020] A Gungun: nanti kedepannya baru optimasi
+============================
