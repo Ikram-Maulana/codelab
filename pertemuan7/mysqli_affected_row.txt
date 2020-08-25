@@ -1,0 +1,6 @@
+[15:10, 8/11/2020] A Gungun: nah barusan di function nya ada mysqli_affected_row
+[15:10, 8/11/2020] A Gungun: itu buat ngecek apa ada perubahan row
+[15:10, 8/11/2020] A Gungun: penambahan atau pengurangan
+[15:11, 8/11/2020] A Gungun: kadang bisa juga langsung kaya gini
+[15:11, 8/11/2020] A Gungun: if (mysqli_query) { //notifikasi berhasil } else { //tampilkan error }
+[15:13, 8/11/2020] A Gungun: biasanya ngecek errornya apa bisa juga pakai function

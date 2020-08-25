@@ -48,3 +48,5 @@ jadi intinya supaya jelas aja, itu field punya siapa
   ^
   INSERT INTO `students` (id, nim, name) VALUES (NULL, '14305XXXX', 'gun gun');
 ]]]]]
+
+INSERT INTO `students` (`id`, `nim`, `name`) VALUES (NULL, '1930511075', 'Ikram Maulana');
