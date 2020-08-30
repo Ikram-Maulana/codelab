@@ -3,7 +3,7 @@ session_start();
 
 include 'function.php';
 $id = $_GET['id'];
-$sql = "select id, nim, name FROM students";
+$sql = "select nim, name FROM students WHERE id='".$id."'";
 $students = query($sql);
 ?>
 

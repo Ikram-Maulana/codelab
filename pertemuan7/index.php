@@ -49,7 +49,8 @@ $students = query($sql);
       <td><?php
         echo $student['name'];?></td>
       <td><a href="form_update.php?id=<?php echo $student['id']; ?>">Edit</a>
-        <a href="action_delete.php?id=<?php echo $student['id']; ?>">Hapus</a></td>
+        <a href="action_delete.php?id=<?php echo $student['id']; ?>">Hapus</a>
+      </td>
     </tr>
     <?php endforeach; ?>
     <?php else : ?>
